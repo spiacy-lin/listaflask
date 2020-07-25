@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Nowy Element</title>
+{% endblock %}
+
+{% block body %}
+<h1>Nowy Element</h1>
+    <hr>
+    <h2>Utwórz nowy wpis</h2>
+    <form action='/posts' method='POST'>
+        <label for="title">Treść:</label>
+        <input class="form-control" type='text' name='title' id='title' placeholder="Wprowadż element" aria-label="Wprowadź element">
+        <br>
+        <input type='submit' value='Zapisz'>
+    </form>
+{% endblock %}
